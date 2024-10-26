@@ -1,7 +1,3 @@
-.notFoundBody {
-  height: 100dvh;
-}
-
 .notFound {
   flex-grow: 1;
   display: flex;

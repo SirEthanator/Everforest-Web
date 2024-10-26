@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function NotFound() {
   return (
-  <body className="notFoundBody">
+  <body>
     <Navbar />
     <div className="notFound">
       <h1 className="errCode">404</h1>

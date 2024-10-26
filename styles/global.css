@@ -72,6 +72,7 @@ body {
   margin: 0;
   background-color: var(--bg0);
   transition: ease 0.2s;
+  height: 100%;
 }
 
 .nf-fa-copy {
@@ -83,6 +84,7 @@ body {
 
 .navBar {
   display: flex;
+  flex-shrink: 0;
   align-items: stretch;
   background-color: var(--bg_dim);
   height: 70px;
