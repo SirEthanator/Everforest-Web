@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar({active='none'}) {
   let navLinks = [
     ['Home', '/'],
-    ['Palette', '#'],
+    ['Palette', '/palette'],
     ['Ports', '#']
   ];
 
