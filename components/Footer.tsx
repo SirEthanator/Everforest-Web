@@ -11,7 +11,7 @@ export default function Footer() {
         alt="Github logo" />
         </a>
 
-        <p className="copyright">© 2024 Ethan M</p>
+        <p className="copyright">© Copyright 2024 Ethan M</p>
       </div>
     </div>
   )
