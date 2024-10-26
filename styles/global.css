@@ -3,6 +3,8 @@
 /* ==== Colours ==== */
 
 :root {
+  --max-width: 1800px;
+
   --fg: #D3C6AA;
   --red: #E67E80;
   --orange: #E69875;
@@ -195,7 +197,7 @@ body {
   background-color: var(--bg1);
   border-radius: 12px;
   width: calc(100dvw - 40px * 2);
-  max-width: 1800px;
+  max-width: var(--max-width);
   margin: 40px 0;
   transition: ease 0.2s;
 }
@@ -240,5 +242,30 @@ body {
 
 .copyButton:focus {
   color: var(--green);
+}
+
+/* ==== Footer ==== */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_dim);
+  padding: 15px
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 40px;
+}
+
+.copyright {
+  color: var(--fg);
+  font-family: var(--font-fira-mono);
+  font-size: 18px;
 }
 
