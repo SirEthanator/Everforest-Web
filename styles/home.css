@@ -1,0 +1,32 @@
+.homeContent {
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  max-width: var(--max-width);
+  margin: 40px 0;
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.homeTitle, .homeDesc {
+  color: var(--fg);
+  max-width: 45%;
+}
+
+.homeTitle {
+  font-family: var(--font-bungee);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.homeDesc {
+  font-family: var(--font-fira-mono);
+  font-size: 20px;
+  font-weight: normal;
+}
+
