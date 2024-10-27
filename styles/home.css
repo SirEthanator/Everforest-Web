@@ -1,6 +1,7 @@
 .homeContent {
   flex-grow: 1;
   align-self: center;
+  justify-content: space-between;
   display: flex;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: var(--max-width);
@@ -11,11 +12,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 45%;
 }
 
 .homeTitle, .homeDesc {
   color: var(--fg);
-  max-width: 45%;
 }
 
 .homeTitle {
@@ -28,5 +29,15 @@
   font-family: var(--font-fira-mono);
   font-size: 20px;
   font-weight: normal;
+}
+
+.homeImageWrapper {
+  flex-grow: 1;
+  position: relative;
+  max-width: 45%;
+}
+
+.homeImage {
+  object-fit: contain;
 }
 
