@@ -7,3 +7,16 @@ This is my first project using NextJS and React, so don't expect 100% quality co
 
 Now with that out of the way, you can visit it at: [everforest.vercel.app](https://everforest.vercel.app)
 
+
+### TODO
+
+Please note that these aren't in any particular order. They will be done when I wish to complete them.
+
+- [ ] Ports page
+
+- [ ] Homepage cards
+
+- [ ] Title on each palette
+
+- [ ] Mobile support
+
