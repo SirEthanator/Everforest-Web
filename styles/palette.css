@@ -94,10 +94,6 @@
   background-color: var(--bg3);
 }
 
-.copyButton:focus {
-  color: var(--green);
-}
-
 .nf-fa-copy {
   margin-right: 4px;
 }
