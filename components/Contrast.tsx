@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useEffect} from "react";
-import { getHard, getMed, getSoft, getHardL, getMedL, getSoftL, getColours } from "@/functions/colours";
+import { getHard, getMed, getSoft, getHardL, getMedL, getSoftL, getContrast } from "@/functions/colours";
 
 let contrastIDs = ['contrastHard', 'contrastMed', 'contrastSoft'];
 
@@ -31,7 +31,7 @@ export default function ContrastSwitcher() {
       localStorage.clear();  // Clear local storage to reset contrast
     };
 
-  let contrast = getColours('string');
+  let contrast = getContrast();
   if (contrast === 'hard') { hard() }
   else if (contrast === 'med') { med() }
   else if (contrast === 'soft') { soft() }

@@ -71,16 +71,14 @@ export function getSoft() {
   return common.concat(colours, common2)
 };
 
-export function getColours(type="Array") {
-  let contrast:string
+export function getColours() {
+  let contrast:string;
   try { contrast = localStorage.getItem('contrast'); }
   catch { contrast = 'hard' };
-  if (type === 'string') { return contrast }
-  else
-    if (contrast === 'hard') { return getHard() };
-    if (contrast === 'med') { return getMed() };
-    if (contrast === 'soft') { return getSoft() }
-    else { return getHard() };;
+  if (contrast === 'hard') { return getHard() };
+  if (contrast === 'med') { return getMed() };
+  if (contrast === 'soft') { return getSoft() }
+  else { return getHard() };
 };
 
 let commonL = [
@@ -154,15 +152,20 @@ export function getSoftL() {
   return commonL.concat(colours, commonL2)
 };
 
-export function getColoursL(type='Array') {
-  let contrast:string
+export function getColoursL() {
+  let contrast:string;
   try { contrast = localStorage.getItem('contrast'); }
   catch { contrast = 'hard' };
-  if (type === 'string') { return contrast }
-  else
-    if (contrast === 'hard') { return getHardL() };
-    if (contrast === 'med') { return getMedL() };
-    if (contrast === 'soft') { return getSoftL() }
-    else { return getHardL() };;
+  if (contrast === 'hard') { return getHardL() };
+  if (contrast === 'med') { return getMedL() };
+  if (contrast === 'soft') { return getSoftL() }
+  else { return getHardL() };
+}
+
+export function getContrast() {
+  let contrast:string;
+  try { contrast = localStorage.getItem('contrast'); }
+  catch { contrast = 'hard' };
+  return contrast
 }
 
