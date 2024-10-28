@@ -1,0 +1,104 @@
+.contrastSwitcher {
+  display: flex;
+  align-self: center;
+  margin-top: 40px;
+}
+
+.contrastButton {
+  background-color: var(--bg1);
+  border: none;
+  color: var(--fg);
+  font-size: 21px;
+  font-family: var(--font-fira-mono), sans-serif;
+  padding: 15px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.contrastButton:hover {
+  background-color: var(--bg3);
+}
+
+.contrastActive {
+  background-color: var(--green);
+  color: var(--bg0);
+}
+
+.contrastActive:hover {
+  background-color: var(--green);
+}
+
+#contrastHard {
+  border-radius: 12px 0 0 12px;
+  border-right: 1px solid var(--bg3);
+}
+
+#contrastMed {
+  border-left: 1px solid var(--bg3);
+  border-right: 1px solid var(--bg3);
+}
+
+#contrastSoft {
+  border-radius: 0 12px 12px 0;
+  border-left: 1px solid var(--bg3);
+}
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex-grow: 1;
+  background-color: var(--bg1);
+  border-radius: 12px;
+  width: calc(100dvw - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  max-width: var(--max-width);
+  margin: 40px 0;
+  transition: ease 0.2s;
+}
+
+.color {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 25px 0 25px;
+  border-bottom: 1.5px solid var(--bg3);
+}
+
+.colorTitle {
+  color: var(--fg);
+  font-size: 19px;
+  font-family: var(--font-fira-mono), sans-serif;
+}
+
+.swatch {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid var(--bg3);
+  margin: 0 10px 0 0;
+}
+
+.copyButton {
+  margin: 10px 0 10px auto;
+  background-color: var(--bg0);
+  color: var(--fg);
+  font-family: var(--font-fira-mono), sans-serif;
+  font-size: 19px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.copyButton:hover {
+  background-color: var(--bg3);
+}
+
+.copyButton:focus {
+  color: var(--green);
+}
+
+.nf-fa-copy {
+  margin-right: 4px;
+}
+

@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_dim);
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 40px;
+}
+
+.copyright {
+  color: var(--fg);
+  font-family: var(--font-fira-mono);
+  font-size: 18px;
+}
+

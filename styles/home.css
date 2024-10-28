@@ -38,6 +38,6 @@
 }
 
 .homeImage {
-  object-fit: contain;
+  object-fit: contain;  /* Retain aspect ratio */
 }
 

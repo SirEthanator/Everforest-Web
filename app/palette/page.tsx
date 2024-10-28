@@ -1,4 +1,5 @@
 import React from 'react';
+import '@/styles/palette.css'
 import Navbar from '@/components/Navbar';
 import ContrastSwitcher from '@/components/Contrast';
 import Palette from '@/components/Palette';
