@@ -1,6 +1,5 @@
 import React from 'react'
 import '@/styles/global.css';
-import Transitions from '@/components/Transitions';
 import type { Metadata } from 'next';
 
 import { Bungee, Fira_Mono } from 'next/font/google'
@@ -26,11 +25,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <Transitions>
-      <html className={`${bungee_init.variable} ${fira_init.variable}`} lang="en">
-        {children}
-      </html>
-    </Transitions>
+    <html className={`${bungee_init.variable} ${fira_init.variable}`} lang="en">
+      {children}
+    </html>
   )
 }
 
