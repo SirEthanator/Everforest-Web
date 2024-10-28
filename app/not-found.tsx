@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/NotFound.css";
+import "@/styles/not-found.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
