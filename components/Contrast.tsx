@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useEffect} from "react";
-import { getHard, getMed, getSoft, getHardL, getMedL, getSoftL } from "@/functions/colours";
+import { getHard, getMed, getSoft, getHardL, getMedL, getSoftL, getColours } from "@/functions/colours";
 
 let contrastIDs = ['contrastHard', 'contrastMed', 'contrastSoft'];
 
@@ -26,32 +26,39 @@ function setActive(id: string) {
 
 
 export default function ContrastSwitcher() {
-useEffect(() => {  // Run on page load
-  window.onbeforeunload = function () {  // Runs before page unloads
-    localStorage.clear();  // Clear local storage to reset contrast
-};
-}, []);
+  useEffect(() => {  // Run on page load
+    window.onbeforeunload = function () {  // Runs before page unloads
+      localStorage.clear();  // Clear local storage to reset contrast
+    };
 
-function hard() {
-  setColours(getHard());
-  setColours(getHardL());
-  setActive('contrastHard');
-  localStorage.setItem('contrast', 'hard');  // Stores contrast for getColours() function
-};
+  let contrast = getColours('string');
+  if (contrast === 'hard') { hard() }
+  else if (contrast === 'med') { med() }
+  else if (contrast === 'soft') { soft() }
+  else { hard() };
 
-function med() {
-  setColours(getMed());
-  setColours(getMedL());
-  setActive('contrastMed');
-  localStorage.setItem('contrast', 'med');
-};
+  }, []);
 
-function soft() {
-  setColours(getSoft());
-  setColours(getSoftL());
-  setActive('contrastSoft');
-  localStorage.setItem('contrast', 'soft');
-};
+  function hard() {
+    setColours(getHard());
+    setColours(getHardL());
+    setActive('contrastHard');
+    localStorage.setItem('contrast', 'hard');  // Stores contrast for getColours() function
+  };
+
+  function med() {
+    setColours(getMed());
+    setColours(getMedL());
+    setActive('contrastMed');
+    localStorage.setItem('contrast', 'med');
+  };
+
+  function soft() {
+    setColours(getSoft());
+    setColours(getSoftL());
+    setActive('contrastSoft');
+    localStorage.setItem('contrast', 'soft');
+  };
 
   return (
     <div className='contrastSwitcher'>
