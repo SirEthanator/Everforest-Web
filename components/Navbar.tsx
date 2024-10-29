@@ -6,7 +6,7 @@ export default function Navbar({active='none'}) {
   let navLinks = [
     ['Home', '/'],
     ['Palette', '/palette'],
-    ['Ports', '#']
+    ['Ports', '/ports']
   ];
 
   let out = []

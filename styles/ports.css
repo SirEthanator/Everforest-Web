@@ -1,0 +1,9 @@
+.tmp {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--fg);
+  font-family: var(--font-fira-mono);
+  font-size: 40px;
+}
