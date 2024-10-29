@@ -90,6 +90,7 @@ body {
   border-radius: 12px;
   height: 150px;
   padding: 10px;
+  transition: ease 0.2s;
 }
 
 .titleCardBg {
@@ -109,5 +110,6 @@ body {
   font-family: var(--font-bungee);
   font-size: 54px;
   margin: 48px;  /* Result of height - font_size / 2 */
+  transition: ease 0.2s;
 }
 
