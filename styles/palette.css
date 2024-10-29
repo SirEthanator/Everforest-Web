@@ -1,17 +1,22 @@
 .contrastSwitcher {
   display: flex;
   align-self: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--max-width);
 }
 
 .contrastButton {
   background-color: var(--bg1);
   border: none;
   color: var(--fg);
-  font-size: 21px;
+  font-size: 24px;
   font-family: var(--font-fira-mono), sans-serif;
-  padding: 15px;
+  padding: 10px;
   cursor: pointer;
   transition: ease 0.2s;
+  width: 100%;
 }
 
 .contrastButton:hover {
