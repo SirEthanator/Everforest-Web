@@ -7,7 +7,8 @@ import { getColours, getColoursL } from "@/functions/colours";
 
 export default function Palette({ theme='dark' }) {
   let colours:Array<Array<string>>
-  if (theme === 'light') { colours = getColoursL(); theme='light' }
+  let style = {}
+  if (theme === 'light') { colours = getColoursL(); style={marginTop: '0'} }
   else { colours = getColours(); theme='dark' };
 
   let components = [];
@@ -16,7 +17,7 @@ export default function Palette({ theme='dark' }) {
   };
 
   return (
-  <div className='palette'>
+  <div className='palette' style={style}>
     {components}
   </div>
   )
