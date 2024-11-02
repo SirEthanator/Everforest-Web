@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import Card from '@/components/Card'
 import Footer from '@/components/Footer';
 import '@/styles/home.css'
 
@@ -20,6 +21,30 @@ export default function Page() {
                  fill
                  className='homeImage'/>
         </div>
+      </div>
+      <div className='homeCards'>
+        <Card
+          icon='nf-md-palette_swatch_variant'
+          title='Beautiful colours'
+          desc='Discover the carefully constructed palette of the Everforest color scheme.'
+          link='/palette'
+          linkText='Palette'
+        />
+        <Card
+          icon='nf-fa-cube'
+          title='Themes for all'
+          desc='Enjoy Everforest throughout your system with themes for popular applications.'
+          link='/ports'
+          linkText='Ports'
+        />
+        <Card
+          icon='nf-fa-tree'
+          title='Where it all begins'
+          desc='Check out the original color scheme created for Vim.'
+          link='https://github.com/sainnhe/everforest'
+          linkText='Everforest'
+          newTab
+        />
       </div>
 
       <Footer />

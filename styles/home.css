@@ -1,9 +1,9 @@
 .homeContent {
-  flex-grow: 1;
   align-self: center;
   justify-content: space-between;
   display: flex;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  height: calc(100dvh - var(--nav-height));
   max-width: var(--max-width);
   margin: 40px 0;
 }
@@ -27,6 +27,7 @@
 
 .homeDesc {
   font-family: var(--font-fira-mono);
+  font-weight: normal;
   font-size: 20px;
   font-weight: normal;
 }
@@ -39,5 +40,16 @@
 
 .homeImage {
   object-fit: contain;  /* Retain aspect ratio */
+}
+
+.homeCards {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  align-items: stretch;
+  justify-content: stretch;
+  width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  max-width: var(--max-width);
+  margin: 40px 0;
 }
 

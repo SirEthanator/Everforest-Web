@@ -3,7 +3,7 @@
   flex-shrink: 0;
   align-items: stretch;
   background-color: var(--bg_dim);
-  height: 70px;
+  height: var(--nav-height);
   transition: ease 0.2s;
 }
 
