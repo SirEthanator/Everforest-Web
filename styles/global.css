@@ -167,7 +167,8 @@ body {
 .cardDesc {
   font-size: 18px;
   font-weight: normal;
-  margin: 0 0 16px 0;
+  margin: 0 0 auto 0;
+  padding-bottom: 16px;
 }
 
 .cardLink {
