@@ -25,7 +25,7 @@ export default function Page() {
       <div className='homeCards'>
         <Card
           icon='nf-md-palette_swatch_variant'
-          title='Beautiful colours'
+          title='Beautiful colors'
           desc='Discover the carefully constructed palette of the Everforest color scheme.'
           link='/palette'
           linkText='Palette'
