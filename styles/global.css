@@ -1,3 +1,7 @@
+@import url("global/footer.css");
+@import url("global/navbar.css");
+@import url("global/titlecard.css");
+@import url("global/card.css");
 @import url("https://www.nerdfonts.com/assets/css/webfont.css"); /* Import nerd fonts */
 
 /* ==== Colours ==== */
@@ -75,110 +79,5 @@ body {
   background-color: var(--bg0);
   transition: ease 0.2s;
   min-height: 100%;
-}
-
-/* ==== Page Titles ==== */
-
-.titleCard {
-  align-self: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: var(--bg_dim);
-  width: calc(100dvw - 40px * 2);  /* 40px margin on sides */
-  max-width: var(--max-width);
-  margin: 40px 0;
-  border-radius: 12px;
-  height: 150px;
-  transition: ease 0.2s;
-}
-
-.titleCardBg {
-  display: flex;
-  align-items: center;
-  --angle: 70px;
-  height: 100%;
-  width: 75%;
-  aspect-ratio: 1;
-  clip-path: polygon(0 0,100% 0,calc(100% - var(--angle)) 100%,0 100%);
-  background: var(--green);
-  border-radius: 12px 0 0 12px;
-}
-
-.titleCardText {
-  color: var(--bg_dim);
-  font-family: var(--font-bungee);
-  font-size: 54px;
-  margin: 48px;  /* Result of height - font_size / 2 */
-  transition: ease 0.2s;
-}
-
-/* ==== Cards ==== */
-
-.cardWrapper {
-  display: flex;
-  align-items: stretch;
-  justify-content: stretch;
-  text-decoration: none;
-  flex-grow: 1;
-  flex-basis: 0;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border-radius: 12px;
-  background-color: var(--bg_dim);
-  padding: 40px;
-  transition: 0.2s ease;
-}
-
-.card:hover {
-  background-color: var(--bg_green)
-}
-
-.cardIcon {
-  font-size: 30px;
-  color: var(--fg);
-  background-color: var(--bg0);
-  border-radius: 12px;
-  padding: 15px;
-  transition: 0.2s ease;
-}
-
-.card:hover .cardIcon {
-  background-color: var(--bg1)
-}
-
-.cardTitle, .cardDesc {
-  color: var(--fg);
-  font-family: var(--font-fira-mono);
-}
-
-.cardTitle {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 16px 0;
-}
-
-.cardDesc {
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0 0 auto 0;
-  padding-bottom: 16px;
-}
-
-.cardLink {
-  font-family: var(--font-fira-mono);
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--green);
-  margin: 0;
-}
-
-.cardLink:hover {
-  text-decoration: underline;
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import '@/styles/footer.css'
 import Image from "next/image";
 import githubLogo from '@/images/github.png'
 
