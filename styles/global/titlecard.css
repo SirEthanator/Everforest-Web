@@ -10,6 +10,7 @@
   border-radius: 12px;
   height: 150px;
   transition: ease 0.2s;
+  animation: slidefade 1s 1;
 }
 
 .titleCardBg {
