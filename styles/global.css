@@ -1,7 +1,8 @@
-@import url("global/footer.css");
+@import url("global/animations.css");
 @import url("global/navbar.css");
 @import url("global/titlecard.css");
 @import url("global/card.css");
+@import url("global/footer.css");
 @import url("https://www.nerdfonts.com/assets/css/webfont.css"); /* Import nerd fonts */
 
 /* ==== Colours ==== */

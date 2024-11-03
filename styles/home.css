@@ -22,6 +22,7 @@
   font-family: var(--font-bungee);
   font-size: 50px;
   font-weight: bold;
+  animation: slidefade 1s 1;
 }
 
 .homeDesc {
@@ -29,12 +30,14 @@
   font-weight: normal;
   font-size: 20px;
   font-weight: normal;
+  animation: hide 0.31s 1, slidefade 1s 0.3s 1;
 }
 
 .homeImageWrapper {
   flex-grow: 1;
   position: relative;
   max-width: 45%;
+  animation: hide 0.61s 1, slidefade 1s 0.6s 1;
 }
 
 .homeImage {
