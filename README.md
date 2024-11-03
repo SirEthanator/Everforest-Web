@@ -14,7 +14,5 @@ Please note that these aren't in any particular order. They will be done when I 
 
 - [ ] Ports page
 
-- [ ] Title on each palette
-
 - [ ] Mobile support
 
