@@ -6,4 +6,5 @@
   color: var(--fg);
   font-family: var(--font-fira-mono);
   font-size: 40px;
+  animation: hide 0.31s 1, slidefade 1s 0.3s 1;
 }
