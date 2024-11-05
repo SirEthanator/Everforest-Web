@@ -46,12 +46,34 @@
 
 .homeCards {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   align-self: center;
   align-items: stretch;
   justify-content: stretch;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: var(--max-width);
   margin: 40px 0;
+}
+
+/* Mobile support */
+@media (max-width: 950px) {
+  .homeContent {
+    height: 70dvh;
+  }
+
+  .homeText {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .homeImageWrapper {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .homeCards {
+    flex-direction: column;
+  }
 }
 
