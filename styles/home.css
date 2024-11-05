@@ -66,6 +66,14 @@
     text-align: center;
   }
 
+  .homeTitle {
+    font-size: 9dvw;
+  }
+
+  .homeDesc {
+    font-size: 3.5dvw;
+  }
+
   .homeImageWrapper {
     display: none;
     width: 0;
