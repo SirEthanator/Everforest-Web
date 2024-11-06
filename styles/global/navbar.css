@@ -1,9 +1,15 @@
-.navBar {
+.navContainer {
   display: flex;
   flex-shrink: 0;
+  width: 100dvw;
+}
+
+.navBar {
+  display: flex;
   align-items: stretch;
   background-color: var(--bg_dim);
   height: var(--nav-height);
+  width: 100dvw;
   transition: ease 0.2s;
 }
 
@@ -58,5 +64,58 @@
 
 .navActive:hover:after {
   background-color: var(--green);
+}
+
+/* Mobile */
+
+.navMobileContainer {
+  display: none;  /* Changes to flex for mobile */
+  flex-direction: column;
+  width: 100dvw;
+  background-color: var(--bg_dim)
+}
+
+.navBarMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--nav-height);
+}
+
+.hamburger {
+  margin-right: 20px;
+  font-size: 24px;
+  color: var(--fg);
+  background-color: transparent;
+  border: none;
+}
+
+#navLinksMobile {
+  display: none;
+  flex-direction: column;
+  border-top: 1px var(--bg0) solid;
+}
+
+.navLinkMobile {
+  text-decoration: none;
+  font-family: var(--font-fira-mono);
+  color: var(--fg);
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.navActiveMobile {
+  background-color: var(--green);
+  color: var(--bg_dim)
+}
+
+@media (max-width: 950px) {
+  .navMobileContainer {
+    display: flex;
+  }
+  .navBar {
+    display: none;
+  }
 }
 

@@ -1,5 +1,16 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
+
+function toggleHamburger() {
+  let e = document.getElementById("navLinksMobile");
+  if (e.style.display === "flex") {
+    e.style.display = "none";
+  } else {
+    e.style.display = "flex";
+  }
+}
 
 export default function Navbar({active='none'}) {
   let navLinks = [
@@ -8,18 +19,33 @@ export default function Navbar({active='none'}) {
     ['Ports', '/ports']
   ];
 
-  let out = []
+  let desktop = []
+  let mobile  = []
   for (let i = 0; i < navLinks.length; i++) {
-    let classes = 'navLink';
-    if (active === navLinks[i][0]) {classes+=' navActive'};
-    out.push(<Link key={i} href={navLinks[i][1]} className={classes}>{navLinks[i][0]}</Link>);
+    let desktopClasses = ''
+    let mobileClasses = ''
+    if (active === navLinks[i][0]) {desktopClasses=' navActive'; mobileClasses=' navActiveMobile'};
+    desktop.push(<Link key={i} href={navLinks[i][1]} className={`navLink${desktopClasses}`}>{navLinks[i][0]}</Link>);
+    mobile.push(<Link key={i} href={navLinks[i][1]} className={`navLinkMobile${mobileClasses}`}>{navLinks[i][0]}</Link>);
   };
 
   return (
-  <div className='navBar'>
-    <Link href="/" className='title'>Everforest</Link>
-    {out}
-  </div>
+    <div className="navContainer">
+      <div className='navBar'>
+        <Link href="/" className='title'>Everforest</Link>
+        {desktop}
+      </div>
+
+      <div className="navMobileContainer">
+        <div className="navBarMobile">
+          <Link href="/" className='title'>Everforest</Link>
+          <button className="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
+        </div>
+        <div id="navLinksMobile">
+          {mobile}
+        </div>
+      </div>
+    </div>
   )
 }
 
