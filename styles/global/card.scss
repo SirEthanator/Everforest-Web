@@ -1,40 +1,39 @@
 .cardWrapper {
   display: flex;
+  flex: 1 1 0;  /* grow shrink basis */
   align-items: stretch;
   justify-content: stretch;
   text-decoration: none;
-  flex-grow: 1;
-  flex-basis: 0;
 }
 
 .card {
   display: flex;
-  flex-grow: 1;
-  flex-basis: 0;
+  flex: 1 1 0;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  border-radius: 12px;
   background-color: var(--bg_dim);
+  border-radius: 12px;
   padding: 40px;
   transition: 0.2s ease;
 }
 
-.cardWrapper:hover .card {
-  background-color: var(--bg_green)
-}
-
 .cardIcon {
-  font-size: 30px;
   color: var(--fg);
+  font-size: 30px;
   background-color: var(--bg0);
   border-radius: 12px;
   padding: 15px;
   transition: 0.2s ease;
 }
 
-.cardWrapper:hover .cardIcon {
-  background-color: var(--bg1)
+.cardWrapper:hover {
+  .card {
+    background-color: var(--bg_green)
+  }
+  .cardIcon {
+    background-color: var(--bg1)
+  }
 }
 
 .cardTitle, .cardDesc {
@@ -50,16 +49,15 @@
 
 .cardDesc {
   font-size: 18px;
-  font-weight: normal;
   margin: 0 0 auto 0;
   padding-bottom: 16px;
 }
 
 .cardLink {
+  color: var(--green);
   font-family: var(--font-fira-mono);
   font-size: 16px;
   font-weight: bold;
-  color: var(--green);
   margin: 0;
 }
 
