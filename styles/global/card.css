@@ -20,7 +20,7 @@
   transition: 0.2s ease;
 }
 
-.card:hover {
+.cardWrapper:hover .card {
   background-color: var(--bg_green)
 }
 
@@ -33,7 +33,7 @@
   transition: 0.2s ease;
 }
 
-.card:hover .cardIcon {
+.cardWrapper:hover .cardIcon {
   background-color: var(--bg1)
 }
 
