@@ -1,7 +1,46 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(100dvw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100dvw);
+  }
+}
+
+@keyframes dimBg {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: rgba(0,0,0,0.6);
+  }
+}
+
+@keyframes unDimBg {
+  from {
+    background-color: rgba(0,0,0,0.6);
+  }
+  to {
+    background-color: transparent;
+  }
+}
+
 .navContainer {
   display: flex;
   flex-shrink: 0;
   width: 100dvw;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navBar {
@@ -72,7 +111,6 @@
   display: none;  /* Changes to flex for mobile */
   flex-direction: column;
   width: 100dvw;
-  background-color: var(--bg_dim)
 }
 
 .navBarMobile {
@@ -80,6 +118,7 @@
   align-items: center;
   justify-content: space-between;
   height: var(--nav-height);
+  background-color: var(--bg_dim);
 }
 
 .hamburger {
@@ -90,10 +129,24 @@
   border: none;
 }
 
-#navLinksMobile {
+#mobileMenu {
   display: none;
+  width: 100dvw;
+  height: calc(100dvh - var(--nav-height));
+  position: fixed;
+  top: var(--nav-height);
+  transition: 0.7s;
+}
+
+#navLinksMobile {
+  display: flex;
   flex-direction: column;
-  border-top: 1px var(--bg0) solid;
+  background-color: var(--bg_dim);
+  position: absolute;
+  height: 100%;
+  width: 85dvw;
+  top: 0;
+  right: 0;
 }
 
 .navLinkMobile {
@@ -106,8 +159,8 @@
 }
 
 .navActiveMobile {
-  background-color: var(--green);
-  color: var(--bg_dim)
+  background-color: var(--bg_green);
+  color: var(--green)
 }
 
 @media (max-width: 950px) {

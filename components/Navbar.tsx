@@ -4,11 +4,22 @@ import React from "react";
 import Link from "next/link";
 
 function toggleHamburger() {
-  let e = document.getElementById("navLinksMobile");
-  if (e.style.display === "flex") {
-    e.style.display = "none";
+  let menu = document.getElementById("mobileMenu");
+  let links = document.getElementById("navLinksMobile");
+  if (menu.style.display === "flex") {
+
+    setTimeout(() => { menu.style.display = "none"; }, 600)
+    menu.style.animation = "unDimBg 0.6s 1"
+    menu.style.backgroundColor = "transparent"
+    links.style.animation = "slideOut 0.6s 1"
+
   } else {
-    e.style.display = "flex";
+
+    menu.style.display = "flex";
+    menu.style.animation = "dimBg 0.6s 1"
+    menu.style.backgroundColor = "rgba(0,0,0,0.6)"
+    links.style.animation = "slideIn 0.6s 1"
+
   }
 }
 
@@ -41,8 +52,10 @@ export default function Navbar({active='none'}) {
           <Link href="/" className='title'>Everforest</Link>
           <button className="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
         </div>
-        <div id="navLinksMobile">
-          {mobile}
+        <div id="mobileMenu">
+          <div id="navLinksMobile">
+            {mobile}
+          </div>
         </div>
       </div>
     </div>
