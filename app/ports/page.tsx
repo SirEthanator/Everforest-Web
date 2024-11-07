@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '@/components/Navbar';
 import Title from '@/components/TitleCard';
 import Footer from '@/components/Footer';
-import '@/styles/ports.css'
+import '@/styles/ports.scss'
 
 export default function Page() {
   return (

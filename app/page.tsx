@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Card from '@/components/Card'
 import Footer from '@/components/Footer';
-import '@/styles/home.css'
+import '@/styles/home.scss'
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '@/styles/palette.css'
+import '@/styles/palette.scss'
 import Navbar from '@/components/Navbar';
 import Title from '@/components/TitleCard';
 import ContrastSwitcher from '@/components/Contrast';
