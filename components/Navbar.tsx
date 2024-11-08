@@ -57,8 +57,9 @@ export default function Navbar({active='none'}) {
         </div>
 
         <div id="mobileMenu">
+          <div className="mobileMenuEmpty" onClick={() => toggleHamburger()}></div>
           <div id="navLinksWrapMobile">
-            <div id="navLinksMobile">
+            <div className="navLinksMobile">
               {mobile}
             </div>
           </div>

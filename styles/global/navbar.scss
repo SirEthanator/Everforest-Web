@@ -109,6 +109,8 @@
 
 /* Mobile */
 
+$mobileMenuWidth: 85dvw;
+
 .navMobileContainer {
   display: none;  /* Changes to flex for mobile */
   justify-content: center;
@@ -144,6 +146,11 @@
   transition: 0.7s;
 }
 
+.mobileMenuEmpty {
+  height: 100dvh;
+  width: 100dvw - $mobileMenuWidth;
+}
+
 #navLinksWrapMobile {
   position: absolute;
   top: 0;
@@ -151,10 +158,10 @@
   background-color: var(--bg_dim);
   border-radius: 24px 0 0 24px;
   height: 100%;
-  width: 85dvw;
+  width: $mobileMenuWidth;
 }
 
-#navLinksMobile {
+.navLinksMobile {
   position: absolute;
   top: var(--nav-height);
   display: flex;
