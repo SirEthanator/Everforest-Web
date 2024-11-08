@@ -1,3 +1,8 @@
+@use 'global' as *;
+
+$height: 110px;
+$font-size: 48px;
+
 .titleCard {
   align-self: center;
   display: flex;
@@ -8,9 +13,9 @@
   max-width: var(--max-width);
   margin: 40px 0;
   border-radius: 12px;
-  height: 150px;
+  height: $height;
   transition: ease 0.2s;
-  animation: slidefade 1s 1;
+  @include animation;
 }
 
 .titleCardBg {
@@ -18,7 +23,7 @@
   align-items: center;
   --angle: 70px;
   height: 100%;
-  width: 75%;
+  width: 80%;
   aspect-ratio: 1;
   clip-path: polygon(0 0,100% 0,calc(100% - var(--angle)) 100%,0 100%);
   background: var(--green);
@@ -28,8 +33,8 @@
 .titleCardText {
   color: var(--bg_dim);
   font-family: var(--font-bungee);
-  font-size: 54px;
-  margin: 48px;  /* Result of height - font_size / 2 */
+  font-size: $font-size;
   transition: ease 0.2s;
+  margin: 0 0 0 ($height - $font-size) / 2;
 }
 
