@@ -23,13 +23,13 @@
     background-color: transparent;
   }
   to {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.3);
   }
 }
 
 @keyframes unDimBg {
   from {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.3);
   }
   to {
     background-color: transparent;
@@ -111,11 +111,12 @@
 
 .navMobileContainer {
   display: none;  /* Changes to flex for mobile */
+  justify-content: center;
   flex-direction: column;
   width: 100dvw;
 }
 
-.navBarMobile {
+.titleWrapperMobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -124,7 +125,9 @@
 }
 
 .hamburger {
-  margin-right: 20px;
+  position: absolute;
+  z-index: 3;
+  right: 20px;
   font-size: 24px;
   color: var(--fg);
   background-color: transparent;
@@ -134,21 +137,30 @@
 #mobileMenu {
   display: none;
   width: 100dvw;
-  height: calc(100dvh - var(--nav-height));
+  height: 100dvh;
   position: fixed;
-  top: var(--nav-height);
+  z-index: 2;
+  top: 0;
   transition: 0.7s;
 }
 
-#navLinksMobile {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg_dim);
+#navLinksWrapMobile {
   position: absolute;
-  height: 100%;
-  width: 85dvw;
   top: 0;
   right: 0;
+  background-color: var(--bg_dim);
+  border-radius: 24px 0 0 24px;
+  height: 100%;
+  width: 85dvw;
+}
+
+#navLinksMobile {
+  position: absolute;
+  top: var(--nav-height);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 85dvw;
 }
 
 .navLinkMobile {
@@ -157,7 +169,9 @@
   color: var(--fg);
   text-align: center;
   font-size: 30px;
-  padding: 20px;
+  margin: 10px 40px;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 .navActiveMobile {

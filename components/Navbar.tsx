@@ -6,20 +6,20 @@ import "@/styles/global/navbar.scss";
 
 function toggleHamburger() {
   let menu = document.getElementById("mobileMenu");
-  let links = document.getElementById("navLinksMobile");
+  let links = document.getElementById("navLinksWrapMobile");
   if (menu.style.display === "flex") {
 
-    setTimeout(() => { menu.style.display = "none"; }, 595)
-    menu.style.animation = "unDimBg 0.6s 1"
+    setTimeout(() => { menu.style.display = "none"; }, 380)
+    menu.style.animation = "unDimBg 0.4s 1"
     menu.style.backgroundColor = "transparent"
-    links.style.animation = "slideOut 0.6s 1"
+    links.style.animation = "slideOut 0.4s 1"
 
   } else {
 
     menu.style.display = "flex";
-    menu.style.animation = "dimBg 0.6s 1"
-    menu.style.backgroundColor = "rgba(0,0,0,0.6)"
-    links.style.animation = "slideIn 0.6s 1"
+    menu.style.animation = "dimBg 0.4s 1"
+    menu.style.backgroundColor = "rgba(0,0,0,0.3)"
+    links.style.animation = "slideIn 0.4s 1"
 
   }
 }
@@ -48,17 +48,23 @@ export default function Navbar({active='none'}) {
         {desktop}
       </div>
 
+
       <div className="navMobileContainer">
-        <div className="navBarMobile">
+        <button className="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
+        <div className="titleWrapperMobile">
           <Link href="/" className='title'>Everforest</Link>
-          <button className="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
         </div>
+
         <div id="mobileMenu">
-          <div id="navLinksMobile">
-            {mobile}
+          <div id="navLinksWrapMobile">
+            <div id="navLinksMobile">
+              {mobile}
+            </div>
           </div>
         </div>
+
       </div>
+
     </div>
   )
 }
