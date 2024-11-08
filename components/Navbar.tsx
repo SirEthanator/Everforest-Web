@@ -9,17 +9,15 @@ function toggleHamburger() {
   let links = document.getElementById("navLinksWrapMobile");
   if (menu.style.display === "flex") {
 
-    setTimeout(() => { menu.style.display = "none"; }, 380)
-    menu.style.animation = "unDimBg 0.4s 1"
-    menu.style.backgroundColor = "transparent"
-    links.style.animation = "slideOut 0.4s 1"
+    setTimeout(() => { menu.style.display = "none"; }, 400)
+    menu.style.animation = "unDimBg 0.4s 1 forwards"
+    links.style.animation = "slideOut 0.4s 1 forwards"
 
   } else {
 
     menu.style.display = "flex";
-    menu.style.animation = "dimBg 0.4s 1"
-    menu.style.backgroundColor = "rgba(0,0,0,0.3)"
-    links.style.animation = "slideIn 0.4s 1"
+    menu.style.animation = "dimBg 0.4s 1 forwards"
+    links.style.animation = "slideIn 0.4s 1 forwards"
 
   }
 }
