@@ -7,17 +7,20 @@ import "@/styles/global/navbar.scss";
 function toggleHamburger() {
   let menu = document.getElementById("mobileMenu");
   let links = document.getElementById("navLinksWrapMobile");
+  let hamburger = document.getElementById("hamburger");
   if (menu.style.display === "flex") {
 
-    setTimeout(() => { menu.style.display = "none"; }, 400)
-    menu.style.animation = "unDimBg 0.4s 1 forwards"
-    links.style.animation = "slideOut 0.4s 1 forwards"
+    setTimeout(() => { menu.style.display = "none"; }, 400);
+    menu.style.animation = "unDimBg 0.4s 1 forwards";
+    links.style.animation = "slideOut 0.4s 1 forwards";
+    hamburger.innerHTML = `<i class="nf nf-oct-three_bars"></i>`;
 
   } else {
 
     menu.style.display = "flex";
-    menu.style.animation = "dimBg 0.4s 1 forwards"
-    links.style.animation = "slideIn 0.4s 1 forwards"
+    menu.style.animation = "dimBg 0.4s 1 forwards";
+    links.style.animation = "slideIn 0.4s 1 forwards";
+    hamburger.innerHTML = `<i class="nf nf-fae-thin_close"></i>`;
 
   }
 }
@@ -48,7 +51,7 @@ export default function Navbar({active='none'}) {
 
 
       <div className="navMobileContainer">
-        <button className="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
+        <button id="hamburger" onClick={() => toggleHamburger()}><i className="nf nf-oct-three_bars"></i></button>
         <div className="titleWrapperMobile">
           <Link href="/" className='title'>Everforest</Link>
         </div>
