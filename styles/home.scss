@@ -24,22 +24,21 @@
   font-family: var(--font-bungee);
   font-size: 50px;
   font-weight: bold;
-  animation: slidefade 1s 1;
+  @include animation;
 }
 
 .homeDesc {
   font-family: var(--font-fira-mono);
   font-weight: normal;
   font-size: 20px;
-  font-weight: normal;
-  animation: hide 0.31s 1, slidefade 1s 0.3s 1;
+  @include animation(0.3s);
 }
 
 .homeImageWrapper {
   flex-grow: 1;
   position: relative;
   max-width: 45%;
-  animation: hide 0.61s 1, slidefade 1s 0.6s 1;
+  @include animation(0.6s);
 }
 
 .homeImage {
@@ -55,7 +54,7 @@
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: var(--max-width);
   margin: 40px 0;
-  animation: hide 0.91s 1, slidefade 1s 0.9s 1;
+  @include animation(0.9s);
 }
 
 /* Mobile support */
@@ -85,7 +84,7 @@
 
   .homeCards {
     flex-direction: column;
-    animation: hide 0.61s 1, slidefade 1s 0.6s 1;
+    @include animation(0.6s);
   }
 }
 
