@@ -2,8 +2,9 @@
 @import url("https://www.nerdfonts.com/assets/css/webfont.css"); /* Import nerd fonts */
 
 
-@mixin animation($delay: 0s) {
-  animation: hide $delay+0.01s 1, slidefade 0.8s $delay 1;
+@mixin animation($order: 0) {
+  $delay: 0.2s * $order;
+  animation: hide $delay+0.01s 1, slidefade 0.7s $delay 1;
 }
 
 $mobile-breakpoint: 950px;

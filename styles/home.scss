@@ -31,14 +31,14 @@
   font-family: var(--font-fira-mono);
   font-weight: normal;
   font-size: 20px;
-  @include animation(0.3s);
+  @include animation(1);
 }
 
 .homeImageWrapper {
   flex-grow: 1;
   position: relative;
   max-width: 45%;
-  @include animation(0.6s);
+  @include animation(2);
 }
 
 .homeImage {
@@ -54,7 +54,7 @@
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: var(--max-width);
   margin: 40px 0;
-  @include animation(0.9s);
+  @include animation(3);
 }
 
 /* Mobile support */
@@ -84,7 +84,7 @@
 
   .homeCards {
     flex-direction: column;
-    @include animation(0.6s);
+    @include animation(2);
   }
 }
 

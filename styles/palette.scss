@@ -7,7 +7,7 @@
   justify-content: center;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: var(--max-width);
-  @include animation(0.3s);
+  @include animation(1);
 }
 
 .contrastButton {
@@ -61,7 +61,7 @@
   max-width: var(--max-width);
   margin: 40px 0;
   transition: ease 0.2s;
-  @include animation(0.6s);
+  @include animation(2);
 }
 
 .color {
