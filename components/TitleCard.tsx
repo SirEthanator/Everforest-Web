@@ -1,4 +1,5 @@
 import React from "react";
+import "@/styles/global/titlecard.scss";
 
 export default function Title({ title }) {
   return (

@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import "@/styles/global/card.scss"
 
 export default function Card({ icon, title, desc, link, linkText, newTab=false }) {
 

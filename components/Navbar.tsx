@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import "@/styles/global/navbar.scss";
 
 function toggleHamburger() {
   let menu = document.getElementById("mobileMenu");

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import githubLogo from '@/images/github.png'
+import "@/styles/global/footer.scss";
 
 export default function Footer() {
   return (

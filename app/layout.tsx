@@ -1,5 +1,4 @@
 import React from 'react'
-import '@/styles/global.scss';
 import type { Metadata } from 'next';
 import { Analytics } from "@vercel/analytics/react"
 

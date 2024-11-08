@@ -1,3 +1,5 @@
+@use 'global/global' as *;
+
 .homeContent {
   align-self: center;
   justify-content: space-between;
@@ -57,7 +59,7 @@
 }
 
 /* Mobile support */
-@media (max-width: 950px) {
+@media (max-width: $mobile-breakpoint) {
   .homeContent {
     height: 70dvh;
   }

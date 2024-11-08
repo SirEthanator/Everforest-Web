@@ -1,11 +1,7 @@
-@use "global/animations.scss";
-@use "global/navbar.scss";
-@use "global/titlecard.scss";
-@use "global/card.scss";
-@use "global/footer.scss";
+@use "animations";
 @import url("https://www.nerdfonts.com/assets/css/webfont.css"); /* Import nerd fonts */
 
-/* ==== Colours ==== */
+$mobile-breakpoint: 950px;
 
 :root {
   --max-width: 1800px;
@@ -64,8 +60,6 @@
   --gray1L: #939F91;
   --gray2L: #829181;
 }
-
-/* ==== General ==== */
 
 html {
   height: 100%;
