@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
-  max-width: var(--max-width);
+  max-width: $max-width;
   @include animation(1);
 }
 
@@ -58,7 +58,7 @@
   background-color: var(--bg1);
   border-radius: 12px;
   width: calc(100dvw - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 40px 0;
   transition: ease 0.2s;
   @include animation(2);

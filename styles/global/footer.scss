@@ -1,3 +1,5 @@
+@use 'global' as *;
+
 .footer {
   display: flex;
   justify-content: center;
@@ -12,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 0 40px;
 }
 

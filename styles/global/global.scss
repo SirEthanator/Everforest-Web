@@ -8,10 +8,9 @@
 }
 
 $mobile-breakpoint: 950px;
+$max-width: 1800px;
+$nav-height: 70px;
 :root {
-  --max-width: 1800px;
-  --nav-height: 70px;
-
   --fg: #D3C6AA;
   --red: #E67E80;
   --orange: #E69875;

@@ -49,7 +49,7 @@
   display: flex;
   align-items: stretch;
   background-color: var(--bg_dim);
-  height: var(--nav-height);
+  height: $nav-height;
   width: 100dvw;
   transition: ease 0.2s;
 }
@@ -122,7 +122,7 @@ $mobileMenuWidth: 85dvw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--nav-height);
+  height: $nav-height;
   background-color: var(--bg_dim);
 }
 
@@ -163,7 +163,7 @@ $mobileMenuWidth: 85dvw;
 
 .navLinksMobile {
   position: absolute;
-  top: var(--nav-height);
+  top: $nav-height;
   display: flex;
   flex-direction: column;
   height: 100%;

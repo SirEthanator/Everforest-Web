@@ -10,7 +10,7 @@ $font-size: 48px;
   align-items: center;
   background-color: var(--bg_dim);
   width: calc(100dvw - 40px * 2);  /* 40px margin on sides */
-  max-width: var(--max-width);
+  max-width: $max-width;
   margin: 40px 0;
   border-radius: 12px;
   height: $height;
