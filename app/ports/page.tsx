@@ -9,7 +9,7 @@ export default function Page() {
   <body>
     <Navbar active='Ports' />
     <Title title='Ports' />
-    <div className='tmp'>🚧 Under construction! 🚧</div>
+    <div className='tmp'>Coming soon!</div>
     <Footer />
   </body>
   )
