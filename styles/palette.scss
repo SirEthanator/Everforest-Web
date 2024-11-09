@@ -66,34 +66,40 @@
 
 .color {
   display: flex;
-  flex-direction: row;
-  margin: 10px 25px 0 25px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0 25px;
   border-bottom: 1.5px solid var(--bg3);
   transition: $main-transition;
 }
 
 .colorTitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: var(--fg);
   font-size: 19px;
   font-family: var(--font-fira-mono), sans-serif;
+  margin: 0;
 }
 
 .swatch {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 0.8em;
+  height: 0.8em;
   border: 1.5px solid var(--bg3);
   margin: 0 10px 0 0;
   transition: $main-transition;
 }
 
 .copyButton {
-  margin: 10px 0 10px auto;
+  margin: 0;
   background-color: var(--bg0);
   color: var(--fg);
   font-family: var(--font-fira-mono), sans-serif;
   font-size: 19px;
-  padding: 0 15px;
+  padding: 8px 15px;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -106,5 +112,19 @@
 
 .nf-fa-copy {
   margin-right: 4px;
+}
+
+/* Mobile */
+
+@media (max-width: $mobile-breakpoint) {
+  .color {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px 0;
+  }
+
+  .colorTitle {
+    margin: 0 0 15px 0;
+  }
 }
 
