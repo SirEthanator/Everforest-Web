@@ -69,6 +69,7 @@
   flex-direction: row;
   margin: 10px 25px 0 25px;
   border-bottom: 1.5px solid var(--bg3);
+  transition: $main-transition;
 }
 
 .colorTitle {
@@ -83,6 +84,7 @@
   height: 15px;
   border: 1.5px solid var(--bg3);
   margin: 0 10px 0 0;
+  transition: $main-transition;
 }
 
 .copyButton {
