@@ -18,7 +18,7 @@
   font-family: var(--font-fira-mono), sans-serif;
   padding: 10px;
   cursor: pointer;
-  transition: ease 0.2s;
+  transition: $main-transition;
   width: 100%;
 }
 
@@ -60,7 +60,7 @@
   width: calc(100dvw - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: $max-width;
   margin: 40px 0;
-  transition: ease 0.2s;
+  transition: $main-transition;
   @include animation(2);
 }
 
@@ -95,7 +95,7 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  transition: ease 0.2s;
+  transition: $main-transition;
 }
 
 .copyButton:hover {

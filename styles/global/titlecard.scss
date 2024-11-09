@@ -14,7 +14,7 @@ $font-size: 48px;
   margin: 40px 0;
   border-radius: 12px;
   height: $height;
-  transition: ease 0.2s;
+  transition: $main-transition;
   @include animation;
 }
 
@@ -34,7 +34,7 @@ $font-size: 48px;
   color: var(--bg_dim);
   font-family: var(--font-bungee);
   font-size: $font-size;
-  transition: ease 0.2s;
+  transition: $main-transition;
   margin: 0 0 0 ($height - $font-size) / 2;
 }
 
