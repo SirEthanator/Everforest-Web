@@ -124,6 +124,7 @@ $mobileMenuWidth: 85dvw;
   justify-content: space-between;
   height: $nav-height;
   background-color: var(--bg_dim);
+  transition: $main-transition;
 }
 
 #hamburger {
