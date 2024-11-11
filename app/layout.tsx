@@ -14,8 +14,10 @@ const fira_init = Fira_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Everforest [WIP]",
-  description: "A warm, comfortable, and pleasant color scheme based around green designed to be easy on the eyes."
+  title: "Everforest",  // Default title if not specified on page
+  description: "A warm, comfortable, and pleasant color scheme based around green designed to be easy on the eyes.",
+  keywords: ['everforest', 'green', 'colorscheme', 'colourscheme', 'color scheme', 'colour scheme', 'color palette', 'colour palette'],
+  authors: [{name: 'Ethan M.', url: 'https://github.com/SirEthanator'}]
 }
 
 export default function RootLayout({
