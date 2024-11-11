@@ -1,6 +1,5 @@
 import React from 'react'
 import type { Metadata } from 'next';
-import { Analytics } from "@vercel/analytics/react"
 
 import { Bungee, Fira_Mono } from 'next/font/google'
 const bungee_init = Bungee({
@@ -26,7 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html className={`${bungee_init.variable} ${fira_init.variable}`} lang="en">
-      <Analytics />
       {children}
     </html>
   )
