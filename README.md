@@ -14,5 +14,3 @@ Please note that these aren't in any particular order. They will be done when I 
 
 - [ ] Ports page
 
-- [ ] Mobile support
-
