@@ -1,15 +1,20 @@
 @use 'global/global' as *;
 
-.tmp {
+.portsContent {
   flex-grow: 1;
   align-self: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--fg);
-  text-align: center;
-  font-family: var(--font-fira-mono);
-  font-size: 40px;
-  animation: hide 0.31s 1, slidefade 1s 0.3s 1;
-  width: calc(100dvw - 80px);
+  flex-direction: column;
 }
+
+.portsCards {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;  // If changing this also change maxWidth in @/app/ports/page.tsx
+  width: calc(100dvw - 80px);
+  max-width: $max-width;
+  @include animation(2);
+}
+

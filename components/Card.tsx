@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import "@/styles/global/card.scss"
 
-export default function Card({ icon, title, desc, link, linkText, newTab=false }) {
+export default function Card({ icon, title, desc, link, linkText, minWidth='0', maxWidth='none', newTab=false }) {
 
   let linkTarget = '_self'
   let linkIcon = 'nf-fa-arrow_right'
@@ -18,7 +18,7 @@ export default function Card({ icon, title, desc, link, linkText, newTab=false }
   }
 
   return (
-    <Link href={link} target={linkTarget} className="cardWrapper">
+    <Link href={link} target={linkTarget} className="cardWrapper" style={{minWidth:minWidth, maxWidth:maxWidth}}>
       <div className="card">
         <i className={`nf ${icon} cardIcon`}></i>
         <h2 className='cardTitle'>{title}</h2>
