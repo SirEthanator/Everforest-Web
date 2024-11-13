@@ -51,7 +51,7 @@
 
 .cardDesc {
   font-size: 18px;
-  margin: 0 0 auto 0;
+  margin: 0;
   padding-bottom: 16px;
 }
 
@@ -60,7 +60,7 @@
   font-family: var(--font-fira-mono);
   font-size: 16px;
   font-weight: bold;
-  margin: 0;
+  margin: auto 0 0 0;
 }
 
 .cardLink:hover {
