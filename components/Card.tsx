@@ -11,12 +11,17 @@ export default function Card({ icon, title, desc, link, linkText, newTab=false }
     linkIcon = 'nf-fa-external_link'
   }
 
+  let renderDesc = true
+  if (desc.length === 0) {
+    renderDesc = true
+  }
+
   return (
     <Link href={link} target={linkTarget} className="cardWrapper">
       <div className="card">
         <i className={`nf ${icon} cardIcon`}></i>
         <h2 className='cardTitle'>{title}</h2>
-        <p className="cardDesc">{desc}</p>
+        {renderDesc && <p className="cardDesc">{desc}</p>}
         <p className="cardLink">{linkText} <i className={`nf ${linkIcon}`}></i></p>
       </div>
     </Link>
