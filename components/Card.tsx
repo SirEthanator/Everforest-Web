@@ -11,9 +11,10 @@ export default function Card({ icon, title, desc, link, linkText, newTab=false }
     linkIcon = 'nf-fa-external_link'
   }
 
-  let renderDesc = true
   if (desc.length === 0) {
-    renderDesc = true
+    desc = <div></div>  // Don't render anything
+  } else {
+    desc = <p className="cardDesc">{desc}</p>
   }
 
   return (
@@ -21,7 +22,7 @@ export default function Card({ icon, title, desc, link, linkText, newTab=false }
       <div className="card">
         <i className={`nf ${icon} cardIcon`}></i>
         <h2 className='cardTitle'>{title}</h2>
-        {renderDesc && <p className="cardDesc">{desc}</p>}
+        {desc}
         <p className="cardLink">{linkText} <i className={`nf ${linkIcon}`}></i></p>
       </div>
     </Link>
