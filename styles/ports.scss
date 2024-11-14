@@ -1,5 +1,7 @@
 @use 'global/global' as *;
 
+$cardsGap: 20px;
+
 .portsContent {
   flex-grow: 1;
   align-self: center;
@@ -7,14 +9,19 @@
   flex-direction: column;
 }
 
+.portsCardWrapper {
+  min-width: 340px;
+  max-width: calc(50% - ($cardsGap / 2))
+}
+
 .portsCards {
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 20px;  // If changing this also change maxWidth in @/app/ports/page.tsx
+  gap: $cardsGap;
   width: calc(100dvw - 80px);
   max-width: $max-width;
-  @include animation(2);
+  @include animation(1);
 }
 

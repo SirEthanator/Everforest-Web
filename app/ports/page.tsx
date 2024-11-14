@@ -25,13 +25,12 @@ for (let i = 0; i<cards.length; i++) {
   components.push(
     <Card
       key={i}
+      page='ports'
       title={cards[i][0]}
       icon={cards[i][1]}
       desc=''
       link={cards[i][2]}
       linkText='Repository'
-      minWidth='340px'
-      maxWidth='calc(50% - 10px)'  // 10px to account for 20px gap
       newTab
     />
   )
