@@ -12,7 +12,7 @@ export default function Card({ icon, title, desc, link, linkText, page='home', n
   }
 
   if (desc.length === 0) {
-    desc = <div></div>  // Don't render anything
+    desc = ''  // Don't render anything
   } else {
     desc = <p className="cardDesc">{desc}</p>
   }
