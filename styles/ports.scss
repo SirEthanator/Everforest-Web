@@ -7,6 +7,7 @@ $cardsGap: 20px;
   align-self: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .portsCardWrapper {
@@ -23,5 +24,12 @@ $cardsGap: 20px;
   width: calc(100dvw - 80px);
   max-width: $max-width;
   @include animation(1);
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .portsCardWrapper {
+    width: 100%;
+    max-width: none;
+  }
 }
 
