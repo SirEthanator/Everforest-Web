@@ -1,4 +1,5 @@
 @use 'global' as *;
+@use 'sass:math';
 
 $height: 110px;
 $font-size: 48px;
@@ -35,7 +36,7 @@ $font-size: 48px;
   font-family: var(--font-bungee);
   font-size: $font-size;
   transition: $main-transition;
-  margin: 0 0 0 ($height - $font-size) / 2;
+  margin: 0 0 0 math.div($height - $font-size, 2);
 }
 
 /* Mobile */
