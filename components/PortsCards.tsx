@@ -23,7 +23,7 @@ let cards = [
   ['Alacritty', 'nf-dev-terminal', 'https://gist.github.com/sainnhe/6432f83181c4520ea87b5211fed27950'],
   ['Kitty', 'nf-dev-terminal', 'https://github.com/bgrnwd/everforest-kitty'],
   ['Xfce4 Terminal', 'nf-dev-terminal', 'https://github.com/toabr/everforest-xfce4-terminal'],
-  ['Windows Terminal', 'nf-dev-terminal', 'gist.github.com/suppayami/7d427d116b97564d1c565a7aed092d08'],
+  ['Windows Terminal', 'nf-dev-terminal', 'https://gist.github.com/suppayami/7d427d116b97564d1c565a7aed092d08'],
   ['Wezterm', 'nf-dev-terminal', 'https://github.com/frdwin/everforest-for-wezterm'],
   ['Tillix', 'nf-dev-terminal', 'https://github.com/spacefall/everforest-tilix'],
   ['MobaXterm', 'nf-dev-terminal', 'https://gist.github.com/broot5/1d9d5ea97ef6e7cf48a31bd45e47e771'],
