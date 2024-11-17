@@ -70,6 +70,7 @@ function hideCards(searchinput) {
   }
 }
 
+var timeoutID
 export default function PortsCards() {
 
   useEffect (() => {  // Start search handling on page load
@@ -77,8 +78,13 @@ export default function PortsCards() {
     var searchinput = ''
 
     searchbar.addEventListener("keyup", () => {  // listen for keypress
-      searchinput = `${searchbar.value}`;
-      hideCards(searchinput)
+      if (typeof timeoutID !== 'undefined') {
+        clearTimeout(timeoutID);
+      }
+      timeoutID = setTimeout(() => {
+        searchinput = `${searchbar.value}`;
+        hideCards(searchinput)
+      }, 300)
     });
   })
 
