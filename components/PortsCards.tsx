@@ -91,7 +91,10 @@ export default function PortsCards() {
   return (
     <div className='portsContent'>
 
-      <input id='searchbar' type="text" placeholder="Search..." />
+      <div className="searchContainer">
+        <i className="nf nf-fa-search searchIcon"></i>
+        <input id='searchbar' type="text" placeholder="Search Ports..." />
+      </div>
 
       <div className='portsCards'>
         {components}

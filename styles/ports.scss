@@ -26,10 +26,52 @@ $cardsGap: 20px;
   @include animation(1);
 }
 
+.searchContainer {
+  display: flex;
+  align-items: center;
+  color: var(--fg);
+  font-size: 18px;
+  background-color: var(--bg_dim);
+  width: calc(40% - ($cardsGap / 2));
+  border-radius: 12px;
+  margin-bottom: 20px;
+  outline: 3px solid transparent;
+  transition: $main-transition;
+}
+
+
+.searchIcon {
+  padding: 15px 0 15px 15px;
+}
+
+#searchbar {
+  flex-grow: 1;
+  color: var(--fg);
+  font-size: 18px;
+  font-family: var(--font-fira-mono);
+  background-color: transparent;
+  padding: 15px;
+  border: none;
+}
+
+#searchbar:focus {
+  border: none;
+  outline: none;
+}
+
+.searchContainer:has(#searchbar:focus) {
+  /* Style .searchContainer when #searchbar is focused */
+  outline: 3px solid var(--green);
+}
+
 @media (max-width: $mobile-breakpoint) {
   .portsCardWrapper {
     width: 100%;
     max-width: none;
+  }
+
+  .searchContainer {
+    width: 100%;
   }
 }
 
