@@ -37,6 +37,17 @@ let cards = [
   ['Chrome', 'nf-fa-globe', 'https://github.com/talwat/dotfiles/tree/main/macOS/everforest/chrome/everforest'],
 ]
 
+cards.sort(sort2D)  // Alphabetical order
+
+function sort2D(a, b) {
+  if (a[0] === b[0]) {
+    return 0;
+  }
+  else {
+    return (a[0] < b[0]) ? -1 : 1;
+  }
+}
+
 let components = []
 for (let i = 0; i<cards.length; i++) {
   components.push(
