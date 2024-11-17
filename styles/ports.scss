@@ -2,30 +2,6 @@
 
 $cardsGap: 20px;
 
-.portsContent {
-  flex-grow: 1;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 40px;
-}
-
-.portsCardWrapper {
-  min-width: 340px;
-  max-width: calc(50% - ($cardsGap / 2))
-}
-
-.portsCards {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: $cardsGap;
-  width: calc(100dvw - 80px);
-  max-width: $max-width;
-  @include animation(1);
-}
-
 .searchContainer {
   display: flex;
   align-items: center;
@@ -37,6 +13,7 @@ $cardsGap: 20px;
   margin-bottom: 20px;
   outline: 3px solid transparent;
   transition: $main-transition;
+  @include animation(1);
 }
 
 
@@ -62,6 +39,30 @@ $cardsGap: 20px;
 .searchContainer:has(#searchbar:focus) {
   /* Style .searchContainer when #searchbar is focused */
   outline: 3px solid var(--green);
+}
+
+.portsContent {
+  flex-grow: 1;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.portsCardWrapper {
+  min-width: 340px;
+  max-width: calc(50% - ($cardsGap / 2))
+}
+
+.portsCards {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: $cardsGap;
+  width: calc(100dvw - 80px);
+  max-width: $max-width;
+  @include animation(2);
 }
 
 @media (max-width: $mobile-breakpoint) {
