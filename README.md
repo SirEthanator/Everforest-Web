@@ -12,5 +12,5 @@ Now with that out of the way, you can visit it at: [everforest.vercel.app](https
 
 Please note that these aren't in any particular order. They will be done when I wish to complete them.
 
-- [ ] Ports page
+- [ ] Change some margins to 20px
 
