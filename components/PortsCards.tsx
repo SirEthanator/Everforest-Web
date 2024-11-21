@@ -35,6 +35,24 @@ let cards = [
 
   ['Firefox', 'nf-fa-globe', 'https://addons.mozilla.org/en-US/firefox/addon/everforest-dark-official/'],
   ['Chrome', 'nf-fa-globe', 'https://github.com/talwat/dotfiles/tree/main/macOS/everforest/chrome/everforest'],
+
+  ['Alfred', 'nf-fa-search', 'https://github.com/mhanberg/everforest-alfred'],
+  ['Cursors', 'nf-md-cursor_default', 'https://github.com/talwat/everforest-cursors'],
+  ['Insomnia', 'nf-fa-gear', 'https://github.com/talwat/insomnia-plugin-everforest-theme'],
+  ['i3', 'nf-linux-i3', 'https://github.com/3rfaan/dotfiles/blob/main/i3/config'],
+  ['Gitea', 'nf-linux-gitea', 'https://git.sainnhe.dev/sainnhe/gitea-themes'],
+  ['KDE Plasma', 'nf-linux-kde_plasma', 'https://github.com/Serge2702/KDE-Everforest'],
+  ['Obsidian', 'nf-fa-pen', 'https://github.com/kepano/obsidian-minimal/releases/tag/5.2.8'],
+  ['Polybar', 'nf-fa-cube', 'https://github.com/3rfaan/dotfiles/blob/main/polybar/config.ini'],
+  ['Redlib', 'nf-fa-reddit', 'https://github.com/isaac-8601/redlib-everforest'],
+  ['SearXNG', 'nf-fa-search', 'https://github.com/isaac-8601/searxng-everforest'],
+  ['Slack', 'nf-fa-comments', 'https://github.com/itendtostare/everforest-slack'],
+  ['tmux', 'nf-dev-terminal', 'https://github.com/talwat/dotfiles/blob/main/macOS/everforest/.tmux.conf'],
+  ['tmux plugin', 'nf-dev-terminal', 'https://github.com/TanglingTreats/tmux-everforest'],
+  ['Xresources', 'nf-linux-xorg', 'https://github.com/jef/everforest-xresources'],
+  ['Zathura', 'nf-md-file_document', 'https://git.sr.ht/~maksim/zathura-everforest'],
+  ['Zellij', 'nf-dev-terminal', 'https://github.com/n1yn/everforest-dark-zellij'],
+  ['Zsh', 'nf-dev-terminal', 'https://github.com/sainnhe/dotfiles/tree/master/.zsh-theme']
 ]
 
 cards.sort(sort2D)  // Alphabetical order
