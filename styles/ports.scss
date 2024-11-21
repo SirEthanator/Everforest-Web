@@ -8,7 +8,7 @@ $cardsGap: 20px;
   color: var(--fg);
   font-size: 18px;
   background-color: var(--bg_dim);
-  width: calc(40% - ($cardsGap / 2));
+  width: 100%;
   border-radius: 12px;
   margin-bottom: 20px;
   outline: 3px solid transparent;
@@ -69,10 +69,6 @@ $cardsGap: 20px;
   .portsCardWrapper {
     width: 100%;
     max-width: none;
-  }
-
-  .searchContainer {
-    width: 100%;
   }
 }
 
