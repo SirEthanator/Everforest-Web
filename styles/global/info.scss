@@ -12,19 +12,19 @@ $border-left: 5px solid;
   width: 100%;
 }
 
-.info.info {
-  background-color: var(--bg_blue);
-  border-left: $border-left var(--blue);
-}
-
-.info.warning {
-  background-color: var(--bg_yellow);
-  border-left: $border-left var(--yellow);
-}
-
-.info.caution {
-  background-color: var(--bg_red);
-  border-left: $border-left var(--red);
+.info {
+  &.info {
+    background-color: var(--bg_blue);
+    border-left: $border-left var(--blue);
+  }
+  &.warning {
+    background-color: var(--bg_yellow);
+    border-left: $border-left var(--yellow);
+  }
+  &.caution {
+    background-color: var(--bg_red);
+    border-left: $border-left var(--red);
+  }
 }
 
 .infoTitle {
