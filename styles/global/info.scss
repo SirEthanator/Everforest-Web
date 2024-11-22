@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+$border-left: 5px solid;
+
+.info {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.info.info {
+  background-color: var(--bg_blue);
+  border-left: $border-left var(--blue);
+}
+
+.info.warning {
+  background-color: var(--bg_yellow);
+  border-left: $border-left var(--yellow);
+}
+
+.info.caution {
+  background-color: var(--bg_red);
+  border-left: $border-left var(--red);
+}
+
+.infoTitle {
+  color: var(--fg);
+  font-family: var(--font-fira-mono);
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.infoText {
+  color: var(--fg);
+  font-family: var(--font-fira-mono);
+  font-size: 16px;
+  margin: 0;
+}
+

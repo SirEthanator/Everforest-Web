@@ -45,6 +45,10 @@ $cardsGap: 20px;
   flex-grow: 1;
   align-self: center;
   display: flex;
+  align-items: center;
+  width: calc(100dvw - 80px);
+  max-width: $max-width;
+  display: flex;
   flex-direction: column;
   margin-bottom: 40px;
 }
@@ -60,8 +64,7 @@ $cardsGap: 20px;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: $cardsGap;
-  width: calc(100dvw - 80px);
-  max-width: $max-width;
+  width: 100%;
   @include animation(2);
 }
 
