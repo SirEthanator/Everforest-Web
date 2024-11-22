@@ -4,7 +4,7 @@
   align-self: center;
   justify-content: space-between;
   display: flex;
-  width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  width: calc(100% - $margin-page-sides * 2);  // Margin on sides
   height: calc(100dvh - $nav-height);
   max-width: $max-width;
 }
@@ -51,7 +51,7 @@
   align-self: center;
   align-items: stretch;
   justify-content: stretch;
-  width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
+  width: calc(100% - $margin-page-sides * 2);  // Margin on sides
   max-width: $max-width;
   margin: 0;
   @include animation(3);

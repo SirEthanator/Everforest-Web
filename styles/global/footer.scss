@@ -5,9 +5,9 @@
   justify-content: center;
   align-items: center;
   background-color: var(--bg_dim);
-  padding: 15px;
+  padding: $padding-small;
   flex-shrink: 0;
-  margin: 40px 0 0 0;
+  margin: $margin-page-sides 0 0 0;
 }
 
 .footerContent {
@@ -16,7 +16,7 @@
   align-items: center;
   width: 100%;
   max-width: $max-width;
-  margin: 0 40px;
+  margin: 0 $margin-main;
 }
 
 .copyright {

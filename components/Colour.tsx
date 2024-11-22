@@ -6,9 +6,7 @@ import {copy} from '@/functions/copy';
 export default function Colour({ colourID, hex, name, theme }) {
   let style = {}
   if (colourID.includes('gray2')) {
-    style = {border: 'none', marginBottom: '10px'}
-  } else if (colourID.includes('fg')) {
-    style = {marginTop: '10px'}
+    style = {border: 'none'}
   }
   return (
     <div className='color' style={style}>

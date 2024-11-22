@@ -10,9 +10,9 @@ $font-size: 48px;
   justify-content: flex-start;
   align-items: center;
   background-color: var(--bg_dim);
-  width: calc(100dvw - 40px * 2);  /* 40px margin on sides */
+  width: calc(100dvw - $margin-page-sides * 2);  /* Margin on sides */
   max-width: $max-width;
-  margin: 40px 0;
+  margin: $margin-page-sides 0 $margin-main 0;
   border-radius: 12px;
   height: $height;
   transition: $main-transition;

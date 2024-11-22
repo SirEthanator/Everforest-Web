@@ -62,7 +62,7 @@
   color: var(--green);
   font-family: var(--font-bungee), sans-serif;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: $margin-main;
   margin-right: 70px;
 }
 
@@ -74,7 +74,7 @@
   font-family: var(--font-fira-mono);
   color: var(--fg);
   font-size: 24px;
-  padding: 0 15px;
+  padding: 0 $padding-small;
   margin-right: 10px;
   transition: $main-transition;
 }
@@ -176,7 +176,7 @@ $mobileMenuWidth: 85dvw;
   color: var(--fg);
   text-align: center;
   font-size: 30px;
-  margin: 10px 40px;
+  margin: 10px $margin-main;
   padding: 10px;
   border-radius: 12px;
 }

@@ -15,7 +15,7 @@ $cardsGap: 20px;
   background-color: var(--bg_dim);
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 20px;
+  margin-bottom: $margin-main;
   outline: 3px solid transparent;
   transition: $main-transition;
   @include animation(1);
@@ -23,7 +23,7 @@ $cardsGap: 20px;
 
 
 .searchIcon {
-  padding: 15px 0 15px 15px;
+  padding: $padding-small 0 $padding-small $padding-small;
 }
 
 #searchbar {
@@ -32,7 +32,7 @@ $cardsGap: 20px;
   font-size: 18px;
   font-family: var(--font-fira-mono);
   background-color: transparent;
-  padding: 15px;
+  padding: $padding-small;
   border: none;
 }
 
