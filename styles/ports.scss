@@ -57,7 +57,7 @@
 
 .portsCardWrapper {
   min-width: 340px;
-  max-width: calc(50% - ($cardsGap / 2))
+  max-width: calc(50% - ($margin-main / 2))
 }
 
 .portsCards {
