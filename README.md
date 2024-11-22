@@ -14,3 +14,7 @@ Please note that these aren't in any particular order. They will be done when I 
 
 - [ ] Change some margins to 20px
 
+- [ ] Adjust some font sizes
+
+- [ ] Convert some common style properties to variables
+
