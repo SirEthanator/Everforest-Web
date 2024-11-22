@@ -59,7 +59,7 @@
   border-radius: 12px;
   width: calc(100dvw - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: $max-width;
-  margin: 40px 0;
+  margin: 20px 0;
   transition: $main-transition;
   @include animation(2);
 }
