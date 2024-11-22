@@ -1,7 +1,5 @@
 @use 'global/global' as *;
 
-$cardsGap: 20px;
-
 .portsInfo {
   width: 100%;
   @include animation(1);
@@ -67,7 +65,7 @@ $cardsGap: 20px;
   align-items: stretch;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: $cardsGap;
+  gap: $margin-main;
   width: 100%;
   @include animation(2);
 }

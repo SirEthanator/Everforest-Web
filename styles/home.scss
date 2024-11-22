@@ -47,7 +47,7 @@
 
 .homeCards {
   display: flex;
-  gap: 20px;
+  gap: $margin-main;
   align-self: center;
   align-items: stretch;
   justify-content: stretch;
