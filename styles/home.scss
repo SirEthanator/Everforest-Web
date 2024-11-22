@@ -53,7 +53,7 @@
   justify-content: stretch;
   width: calc(100% - 40px * 2);  /* 40px margin on either side since margin property doesn't work */
   max-width: $max-width;
-  margin: 40px 0;
+  margin: 0;
   @include animation(3);
 }
 
