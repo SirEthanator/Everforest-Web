@@ -80,6 +80,7 @@ body {
   background-color: var(--bg0);
   transition: $main-transition;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 a {
