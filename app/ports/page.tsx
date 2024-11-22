@@ -18,10 +18,12 @@ export default function Page() {
       <Navbar active='Ports' />
       <Title title='Ports' />
       <div className='portsContent'>
-        <Info
-          info={["This list does not aim to achieve full parity with the ", <a key={0} href='https://github.com'>official list</a>,
-            ". I have made my own changes to it, so don't go telling me something is missing since it is probably intentional."]}
-        />
+        <div className='portsInfo'>
+          <Info
+            info={["This list does not aim to achieve full parity with the ", <a key={0} href='https://github.com'>official list</a>,
+              ". I have made my own changes to it, so don't go telling me something is missing since it is probably intentional."]}
+          />
+        </div>
         <PortsSearch />
         <PortsCards />
       </div>

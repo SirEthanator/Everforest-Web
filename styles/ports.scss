@@ -2,6 +2,11 @@
 
 $cardsGap: 20px;
 
+.portsInfo {
+  width: 100%;
+  @include animation(1);
+}
+
 .searchContainer {
   display: flex;
   align-items: center;
