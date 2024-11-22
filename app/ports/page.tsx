@@ -20,7 +20,7 @@ export default function Page() {
       <div className='portsContent'>
         <div className='portsInfo'>
           <Info
-            info={["This list does not aim to achieve full parity with the ", <a key={0} href='https://github.com'>official list</a>,
+            info={["This list does not aim to achieve full parity with the ", <a key={0} href='https://github.com/sainnhe/everforest/wiki'>official list</a>,
               ". I have made my own changes to it, so don't go telling me something is missing since it is probably intentional."]}
           />
         </div>
