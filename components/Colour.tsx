@@ -14,7 +14,7 @@ export default function Colour({ colourID, hex, name, theme }) {
         <span className='swatch' style={{backgroundColor: 'var(--'+colourID+')'}}></span>{name}
       </p>
       <button className='copyButton' onClick={() => copy(colourID,theme)} id={colourID}>
-        <i className="nf nf-fa-copy"></i> {hex}
+        <i className="nf nf-fa-copy copyIcon"></i> {hex}
       </button>
     </div>
   )
