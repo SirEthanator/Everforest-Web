@@ -2,7 +2,7 @@
 @use 'sass:math';
 
 $height: 110px;
-$font-size: 48px;
+$font-size: $font-large;
 
 .titleCard {
   align-self: center;

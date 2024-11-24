@@ -22,7 +22,7 @@
 
 .cardIcon {
   color: var(--fg);
-  font-size: 30px;
+  font-size: $font-semi-large;
   background-color: var(--bg0);
   border-radius: 12px;
   padding: $padding-small;
@@ -44,13 +44,13 @@
 }
 
 .cardTitle {
-  font-size: 24px;
+  font-size: $font-med;
   font-weight: bold;
   margin: $margin-div-content 0;
 }
 
 .cardDesc {
-  font-size: 18px;
+  font-size: $font-main;
   margin: 0;
   padding-bottom: $margin-div-content;
 }
@@ -58,7 +58,7 @@
 .cardLink {
   color: var(--green);
   font-family: var(--font-fira-mono);
-  font-size: 16px;
+  font-size: $font-main;
   font-weight: bold;
   margin: auto 0 0 0;
 }

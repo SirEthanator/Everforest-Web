@@ -22,7 +22,7 @@
 
 .homeTitle {
   font-family: var(--font-bungee);
-  font-size: 50px;
+  font-size: $font-large;
   font-weight: bold;
   @include animation;
 }
@@ -30,7 +30,7 @@
 .homeDesc {
   font-family: var(--font-fira-mono);
   font-weight: normal;
-  font-size: 20px;
+  font-size: $font-med-small;
   @include animation(1);
 }
 
@@ -55,6 +55,10 @@
   max-width: $max-width;
   margin: 0;
   @include animation(3);
+}
+
+.card.home {
+  padding: $padding-large;
 }
 
 /* Mobile support */

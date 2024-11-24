@@ -17,12 +17,17 @@ export default function Card({ icon, title, desc, link, linkText, page='home', n
     desc = <p className="cardDesc">{desc}</p>
   }
 
+  let classes = 'card'
   let wrapClasses = 'cardWrapper'
-  if (page === 'ports') { wrapClasses += ' portsCardWrapper' }
+  if (page === 'ports') {
+    wrapClasses += ' portsCardWrapper'
+  } else if (page === 'home') {
+    classes += ' home'
+  }
 
   return (
     <Link href={link} target={linkTarget} className={wrapClasses}>
-      <div className='card'>
+      <div className={classes}>
         <i className={`nf ${icon} cardIcon`}></i>
         <h2 className='cardTitle'>{title}</h2>
         {desc}

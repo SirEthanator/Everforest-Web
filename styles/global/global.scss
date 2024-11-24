@@ -15,8 +15,16 @@ $main-transition: background-color 0.2s ease-out, color 0.2s ease-out, border 0.
 $margin-page-sides: 40px;
 $margin-main: 20px;
 $margin-div-content: 14px;
-$padding-main: 30px;
-$padding-small: 15px;
+
+$padding-main: 25px;
+$padding-small: 14px;
+$padding-large: 35px;
+
+$font-main: 18px;
+$font-med-small: 20px;
+$font-med: 24px;
+$font-semi-large: 32px;
+$font-large: 48px;
 
 :root {
   --fg: #D3C6AA;

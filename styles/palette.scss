@@ -14,9 +14,9 @@
   background-color: var(--bg1);
   border: none;
   color: var(--fg);
-  font-size: 24px;
+  font-size: $font-med-small;
   font-family: var(--font-fira-mono), sans-serif;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
   transition: $main-transition;
   width: 100%;
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: flex-start;
   color: var(--fg);
-  font-size: 19px;
+  font-size: $font-main;
   font-family: var(--font-fira-mono), sans-serif;
   margin: 0;
 }
@@ -99,7 +99,7 @@
   background-color: var(--bg0);
   color: var(--fg);
   font-family: var(--font-fira-mono), sans-serif;
-  font-size: 19px;
+  font-size: $font-main;
   padding: 8px $padding-small;
   border: none;
   border-radius: 12px;
