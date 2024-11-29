@@ -12,9 +12,4 @@ Now with that out of the way, you can visit it at: [everforest.vercel.app](https
 
 Please note that these aren't in any particular order. They will be done when I wish to complete them.
 
-- [ ] Change some margins to 20px
-
-- [ ] Adjust some font sizes
-
-- [ ] Convert some common style properties to variables
-
+- [ ] Nothing right now!
