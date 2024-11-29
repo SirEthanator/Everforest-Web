@@ -15,7 +15,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   background-color: var(--bg_dim);
-  border-radius: 12px;
+  border-radius: $br-main;
   padding: $padding-main;
   transition: $main-transition;
 }
@@ -24,7 +24,7 @@
   color: var(--fg);
   font-size: $font-semi-large;
   background-color: var(--bg0);
-  border-radius: 12px;
+  border-radius: $br-main;
   padding: $padding-small;
   transition: $main-transition;
 }

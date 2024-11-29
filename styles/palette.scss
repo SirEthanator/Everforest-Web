@@ -36,7 +36,7 @@
 }
 
 #contrastHard {
-  border-radius: 12px 0 0 12px;
+  border-radius: $br-main 0 0 $br-main;
   border-right: 1px solid var(--bg3);
 }
 
@@ -46,7 +46,7 @@
 }
 
 #contrastSoft {
-  border-radius: 0 12px 12px 0;
+  border-radius: 0 $br-main $br-main 0;
   border-left: 1px solid var(--bg3);
 }
 
@@ -56,7 +56,7 @@
   align-self: center;
   flex-grow: 1;
   background-color: var(--bg1);
-  border-radius: 12px;
+  border-radius: $br-main;
   width: calc(100dvw - $margin-page-sides * 2);  /* Margin on sides */
   max-width: $max-width;
   margin: $margin-main 0;
@@ -102,7 +102,7 @@
   font-size: $font-main;
   padding: 8px $padding-small;
   border: none;
-  border-radius: 12px;
+  border-radius: $br-main;
   cursor: pointer;
   transition: $main-transition;
 }

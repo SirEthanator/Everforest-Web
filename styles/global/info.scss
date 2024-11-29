@@ -5,7 +5,7 @@ $border-left: 5px solid;
 .info {
   display: flex;
   flex-direction: column;
-  border-radius: 12px;
+  border-radius: $br-main;
   padding: $padding-small;
   margin-bottom: $margin-main;
   box-sizing: border-box;

@@ -156,7 +156,7 @@ $mobileMenuWidth: 85dvw;
   top: 0;
   right: 0;
   background-color: var(--bg_dim);
-  border-radius: 24px 0 0 24px;
+  border-radius: ($br-main * 2) 0 0 ($br-main * 2);
   height: 100%;
   width: $mobileMenuWidth;
 }
@@ -178,7 +178,7 @@ $mobileMenuWidth: 85dvw;
   font-size: $font-semi-large;
   margin: 10px $margin-main;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: $br-main;
 }
 
 .navActiveMobile {
