@@ -41,7 +41,7 @@ export default function PortsSearch() {
   return (
     <div className="searchContainer">
       <i className="nf nf-fa-search searchIcon"></i>
-      <input id='searchbar' type="text" placeholder="Search Ports..." />
+      <input id='searchbar' type="text" placeholder="Search Ports" />
     </div>
   )
 
